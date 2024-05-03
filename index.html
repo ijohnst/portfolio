@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio for Ian Johnston</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="wrapper pt-600">
+        <div class="flex navbar">
+            <div class="logo h1"><a href="/">Ian Johnston</a></div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars icon-menu" aria-hidden="true"></i>
+                <i class="fa-solid fa-xmark icon-close" aria-hidden="true"></i>
+                <span class="visually-hidden">Menu</span></button>
+            <nav class="primary-navigation" id="primary-navigation" >
+                <ul class="navigation flex" role="list">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="subhead pt-500">I streamline operations, lead project initiatives, and drive strategic growth through innovative digital solutions</p>
+    </header>
+    <main>
+        
+        <section id="projects" class="wrapper pblock-800">
+            <h2 class="h2 mb-600">My Work</h2>
+            <!-- GRID
+            <div class="grid"></div> -->
+            <img src="/Assets/Portfolio Grid.png" alt="Portfolio">
+        </section>
+        <section id="contact" class="wrapper pb-800">
+            <h2 class="h2 mb-600">Get in Touch</h2>
+            <div class="flex btn-group">
+                <a href="mailto:ian.h.johnston@outlook.com" class="btn" role="button"><i class="fa-solid fa-envelope"></i>ian.h.johnston@outlook.com</a>
+                <a href="https://www.linkedin.com/in/ian-h-johnston/" class="btn" role="button" data-type="inverted">Connect on Linkedin<i class="fa-brands fa-linkedin fa-lg"></i></a>
+            </div>
+            <div id="resume">
+                <div class="download flex">
+                    <i class="fa-solid fa-file-pdf fa-lg"></i>
+                    <a href="/Assets/Ian Johnston Resume_website.pdf">Ian_Johnston_Resume.pdf</a>
+                    <span>(290 kb)</span></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="text-center">
+            <i class="fa-solid fa-xs fa-copyright"></i>2024 Ian Johnston
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
