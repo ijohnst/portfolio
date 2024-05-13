@@ -204,6 +204,10 @@ h2, h3 {
     color: var(--btn-color-light);
 }
 
+article p:not(.portfolio-subhead) {
+    max-width: 70ch;
+}
+
 
 /* Header */
 .subhead {
@@ -380,6 +384,10 @@ footer i {
     text-wrap: pretty;
 }
 
+.overview p, .my-role p {
+    padding-right: 1rem;
+}
+
 .results {
     background: var(--clr-neutral-200);
     border-radius: 20px;
@@ -422,8 +430,8 @@ footer i {
 }
 
 .wrapper, .wrapper-lg {
-    --content-max-width: 1440px;
-    --padding: 1rem;
+    --content-max-width: 1250px;
+    --padding: 3rem;
     width: min(var(--content-max-width), 100% - (var(--padding)* 2));
     margin-inline: auto;
   }
@@ -444,7 +452,7 @@ footer i {
 
 .even-columns {
     display: grid;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 @media (min-width: 50em) {
@@ -588,3 +596,4 @@ footer i {
 .img-center {
     margin-inline:auto;
 }
+
