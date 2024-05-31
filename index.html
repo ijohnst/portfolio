@@ -20,23 +20,37 @@
     <meta name="twitter:image" content="https://ianjdigital.com/Assets/og-image.jpg">
 
 
-    <link rel="canonical" href="https://ianjdigital.com">
     <meta name="robots" content="index, follow">
 
+    <link rel="canonical" href="https://ianjdigital.com">
 
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style.css">
+
+    <!-- Structured Data Markup (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Ian Johnston",
+          "jobTitle": ["Project Manager", "Product Owner", "Content Manager"],
+          "url": "https://ianjdigital.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/ian-h-johnston/"
+          ],
+          "description": "Ian Johnston showcases expertise in project management, web design, and process management."
+        }
+        </script>
 </head>
 <body>
     <header class="wrapper pt-600">
         <div class="flex navbar">
             <div class="logo h1"><a href="/">Ian Johnston</a></div>
-            <div><a href="https://www.linkedin.com/in/ian-h-johnston/" class="btn" target="_blank">Get in Touch</a></div>
+            <div><a href="https://www.linkedin.com/in/ian-h-johnston/" class="btn" target="_blank" rel="noopener">Get in Touch</a></div>
         </div>
         <p class="subhead pt-500">I streamline operations, lead project initiatives, and drive strategic growth through innovative digital solutions</p>
     </header>
@@ -58,7 +72,7 @@
                 <div class="card">
                     <a href="https://levelupproductivity.com" target="_blank"><img src="Assets/lup-thumbnail.webp" alt="Level Up Productivity Blog"  class="card--img"></a>
                     <p class="eyebrow pblock-200">Web Design</p>
-                    <a href="https://levelupproductivity.com" target="_blank"" class="h3 semibold">Level Up Productivity</a>
+                    <a href="https://levelupproductivity.com" target="_blank"" rel="noopener" class="h3 semibold">Level Up Productivity</a>
                 </div>
                 <div class="card">
                     <a href="/portfolio/project-management-workflow-efficiency.html"><img src="Assets/project_management_case_thumb.webp" alt="Optimizing Workflow Efficiency for SkyLaunch Marketing Campaign"  class="card--img"></a>
@@ -70,7 +84,7 @@
     </main>
     <footer>
         <div class="text-center">
-            <i class="fa-solid fa-xs fa-copyright"></i>2024 Ian Johnston
+            <span class="copyright">&copy; </span>2024 Ian Johnston
         </div>
     </footer>
 </body>
