@@ -230,82 +230,22 @@ article p:not(.portfolio-subhead) {
 
 .navigation {
     gap: 2rem;
+    justify-content: center;
 }
 
 
 .navigation a:hover, .navigation a:focus {
       color: var(--clr-primary-600);
-      text-decoration: underline;
-      text-decoration-thickness: 0.07lh;
-      text-underline-offset: 0.17lh;
 }
 
 .navigation a {
     transition: 0.5s ease-in-out;
+    color: var(--clr-neutral-900);
+    text-decoration: underline;
+      text-decoration-thickness: 0.07lh;
+      text-underline-offset: 0.2lh;
+      text-decoration-color: var(--clr-primary-600);
 }
-
-.mobile-nav-toggle {
-    display: none;
-}
-
-
-@media(max-width: 50em) {
-    .primary-navigation {
-        display: none;
-
-        position: absolute;
-        top:10%;
-        right: 0;
-        padding-block: var(--size-900);
-        background: var(--clr-neutral-100);
-        box-shadow: 0 0 0.5em rgb(0,0,0,0.05);
-        width: 100%;
-        z-index: 98;
-    }
-
-    .primary-navigation[data-visible] {
-        display: block;
-    }
-
-    .primary-navigation::after {
-        content:'';
-        position: absolute;
-    }
-
-    .navigation {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navigation a {
-        font-weight: var(--fw-semibold);
-        color: var(--clr-primary-600);
-    }
-
-    .navigation a:hover, .navigation a:focus {
-        color: var(--clr-primary-800);
-    }
-
-
-    .mobile-nav-toggle {
-        display: block;
-        cursor: pointer;
-        background: transparent;
-        border: 0;
-        padding: 0.5em;
-    }
-    
-    .mobile-nav-toggle .icon-close {
-        display: none;
-    }
-
-    .logo, .mobile-nav-toggle {
-        z-index: 99;
-    }
-
-    
-}
-
 
 /* My Work */
 .card--container {
@@ -429,6 +369,10 @@ footer {
 
 .summary-featured{
     margin-inline: auto;
+}
+
+.page-not-found {
+    font-size: var(--size-900);
 }
 
 /* Utilities */
@@ -591,6 +535,10 @@ footer {
 
 .mb-700 {
     margin-bottom: var(--size-700);
+}
+
+.mblock-900 {
+    margin-block: var(--size-900) var(--size-600);
 }
 
 .h2 {
